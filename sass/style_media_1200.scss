@@ -1,0 +1,193 @@
+// for width less than 1200px:
+@media (max-width: 1200px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-ms-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+//styles for header:
+
+#menu-toggle {
+  display: block;
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  user-select: none;
+  z-index: 1;
+}
+
+#menu-toggle input {
+	cursor: pointer;
+  	display: block;
+  	height: 32px;
+  	opacity: 0;
+  	position: absolute;
+  	width: 40px;
+  	z-index: 2;
+}
+
+#menu-toggle span {
+	background: grey;
+  	border-radius: 3px;
+  	display: block;
+  	height: 5px;
+  	margin-bottom: 5px;
+  	position: relative;
+  	width: 30px;
+  	z-index: 1;
+}
+
+#menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+#menu {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 2%;
+	margin: -100px 0 0 -50px;
+	font-size: 1em;
+	line-height: 1.8em;
+	padding: 50px;
+	padding-top: 120px;
+	position: absolute;
+	text-align: left;
+	transform: translate(-100%, 0);
+	transition: transform 0.2s;
+	width: 240px;
+}
+
+.company {
+	margin: 0 auto;
+}
+
+.nav-links {
+
+	a {
+		color: grey;
+		font-size: 0.9em;
+		line-height: 1em;
+		margin: 5%;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	li {
+		display: block;
+	}
+}
+
+.page-header {
+	margin-bottom: 100px;
+	padding-top: 15px;
+}
+
+//styles for section home:
+
+.fa-phone-volume {
+	bottom: 35px;
+	position: absolute;
+	right: 50px;
+}
+
+.section-home {
+	.pagination {
+		margin-top: 300px;
+		margin-left: 0;
+	}
+}
+
+//styles for section projects:
+
+.section-projects-slider .nav-links {
+
+	& li {
+		border: 0;
+	}
+}
+
+//styles for section team:
+.section-team {
+	h2 {
+		font-size: 24px;
+	}
+}
+
+.section-team-card {
+	border-radius: 5px;
+	margin: 10px 0 10px 0;
+	height: 100%;
+	width: 100%;
+
+	& i {
+		margin: 10px 10px 20px 10px;
+		padding: .5%;
+	}
+}
+
+// styles for section price:
+
+.section-price-card:first-of-type, {
+	margin-left: 5%;
+}
+
+// styles for section price:
+
+.section-price-card {
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-left: 5%;
+}
+
+.section-price-table {
+	margin: 0;
+}
+
+//styles for section premium:
+
+.section-premium {
+	h2 {
+		font-size: 26px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+//styles for section contacts:
+
+#form-name, #form-email {
+	margin: 30px 15px 30px 15px;
+	width: 23%;
+}
+
+//styles for section contacts-map:
+
+.section-contacts-map {
+	font-size: 16px;
+
+	& .fas:not(.fa-chevron-up), .far {
+		padding-top: 12%;
+	}
+}
+
+//styles for section footer:
+
+.section-footer {
+	height: 550px;
+
+	& i {
+		padding: 1%;
+	}
+	
+	& form {
+		margin-left: 5%;
+		width: 300px;
+	}
+}
+
+}

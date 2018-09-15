@@ -1,0 +1,130 @@
+$grid-columns: 12;
+
+$gold-color: #b88b58;
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+@for $i from 1 through $grid-columns {
+	.col-offset-#{$i} {
+		margin-left: 100% / 12 * $i;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ededed;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+[class^="col-"] {
+		float: left;
+	}
+
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+.long-btn {
+	background-color: $gold-color;
+	border-radius: 30px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	height: 45px;
+	margin: 20px 0;
+	width: 194px;
+
+	&:hover {
+		background-color: white;
+		color: $gold-color;
+		cursor: pointer;
+		border: 1px solid $gold-color;
+		transition: .2s;
+	}
+
+	&:active {
+		background-color: $gold-color;
+		color: white;
+		transition: .2s;
+	}
+	
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.pagination {
+	display: inline-block;
+}
+
+.pagination div {
+	border: 2px solid $gold-color;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 10px;
+	padding: 5px;
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: $gold-color;
+		transition: .3s;
+	}
+
+	&:active {
+		transform: scale(2);
+	}
+}
+
+.short-btn {
+	background-color: black;
+	border-radius: 30px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	height: 45px;
+	width: 129px;
+	
+	&:hover {
+		background-color: white;
+		color: $gold-color;
+		cursor: pointer;
+		border: 1px solid $gold-color;
+		transition: .2s;
+	}
+
+	&:active {
+		background-color: $gold-color;
+		color: white;
+		transition: .2s;
+	}
+	
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.row {
+	overflow: auto;
+	
+	&::before, &::after {
+		clear: both;
+    	content: " ";
+    	display: table;
+	}
+}
