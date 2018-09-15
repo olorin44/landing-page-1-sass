@@ -183,7 +183,7 @@ body {
 
 .nav-links {
   list-style-type: none;
-  margin-right: 200px;
+  margin-right: 240px;
 }
 
 .nav-links a {
@@ -215,7 +215,7 @@ body {
 }
 
 .page-header .company {
-  margin-left: 240px;
+  margin-left: 360px;
 }
 
 .section-home {
@@ -247,7 +247,7 @@ body {
   font-size: 16px;
   height: 40px;
   margin-left: 210px;
-  padding-top: .7%;
+  padding: .7% .3%;
   width: 450px;
 }
 
@@ -259,5 +259,35 @@ body {
 
 .section-home .container {
   position: relative;
+}
+
+.section-features {
+  background-color: #fff;
+  color: #202226;
+  height: 500px;
+}
+
+.section-features .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+.section-features div {
+  height: 315px;
+  margin-top: 90px;
+  text-align: center;
+  width: 310px;
+}
+
+.section-features h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.section-features p {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
