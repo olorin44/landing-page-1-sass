@@ -1,0 +1,83 @@
+//styles for header in section home:
+
+#menu-toggle input {
+	display: none;
+}
+
+.nav-links {
+	list-style-type: none;
+	margin-right: 200px;
+
+	a {
+		color: #888;
+		font-size: 13px;
+		font-weight: bold;
+		margin-left: 30px;
+		text-decoration: none;
+
+		&:hover, &:active {
+			color: #fff;
+		}
+	}
+
+	li {
+		display: inline-flex;
+	}
+}
+
+.page-header {
+	align-items: center;
+	background-color: #000;
+	display: flex;
+	height: 100px;
+	justify-content: space-around;
+
+	.company {
+		margin-left: 240px;
+	}
+}
+
+//styles for section home:
+
+.section-home {
+	background: url("../images/section-home-background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 550px;
+	text-align: center;
+
+	h1 {
+		background-color: #65c25d;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 34px;
+		font-weight: 700;
+		height: 75px;
+		margin-bottom: 20px;
+		margin-left: 210px;
+		margin-top: 180px;
+		padding-top: 1%;
+		width: 345px;
+	}
+
+	h3 {
+		background-color: #000;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 16px;
+		height: 40px;
+		margin-left: 210px;
+		padding-top: .7%;
+		width: 450px;
+	}
+
+	#hand-phone {
+		top: -137px;
+		position: absolute;
+		right: 80px;
+	}
+
+	.container{
+		position: relative;
+	}
+}
