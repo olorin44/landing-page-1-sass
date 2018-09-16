@@ -663,4 +663,17 @@ body {
   color: #659f5c;
   font-weight: bold;
 }
+
+.section-callout {
+  background-color: #79c277;
+  color: #fff;
+  font-size: 32px;
+  height: 150px;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.section-callout span {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
