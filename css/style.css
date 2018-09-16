@@ -627,4 +627,40 @@ body {
   top: 0;
   width: 88%;
 }
+
+.section-commerce {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-commerce h2 {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  margin: 0 auto 30px;
+  padding: 5px;
+  width: 166px;
+}
+
+.section-commerce-card {
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 7px;
+  padding: 15px;
+}
+
+.section-commerce-card:hover {
+  box-shadow: 0 0 20px rgba(4, 5, 5, 0.2);
+}
+
+.section-commerce-card h5 {
+  margin: 25px 0 20px;
+}
+
+.section-commerce-card p {
+  color: #659f5c;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
