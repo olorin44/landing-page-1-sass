@@ -1,0 +1,52 @@
+.section-blog {
+	background: url("../images/section-blog-background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	height: 600px;
+
+	div {
+		display: inline-block;
+	}
+
+	h2 {
+		font-size: 30px;
+		margin: 108px 0 0 32%;
+	}
+
+	h4 {
+		font-size:14px;
+		font-weight: bold;
+		width: 284px;
+
+		&:hover {
+			opacity: .4;
+		}
+	}
+
+	img {
+		height: 160px;
+
+		&:hover {
+			opacity: .3;
+		}
+	}
+
+	p {
+		font-size: 14px;
+		opacity: .75;
+		width: 265px;
+	}
+
+	.section-blog-flex-container {
+		display: flex;
+		justify-content: space-around;
+		margin: 45px 0 107px 32%;
+	}
+
+	.section-blog-line {
+		border-bottom: 2px solid #f1f1f1;
+		opacity: .5;
+		width: 30px;
+	}
+}
