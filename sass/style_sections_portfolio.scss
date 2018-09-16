@@ -91,6 +91,12 @@
 		transition: .4s;
 		width: 230px;
 		z-index: -1;
+
+		h4 {
+			color: #fff;
+			margin-top: 60px;
+			text-align: center;
+		}
 	}
 
 	.section-portfolio-layer:hover .section-portfolio-layer-icons {

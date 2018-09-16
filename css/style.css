@@ -386,9 +386,70 @@ body {
   z-index: -1;
 }
 
+.section-portfolio .section-portfolio-layer-icons h4 {
+  color: #fff;
+  margin-top: 60px;
+  text-align: center;
+}
+
 .section-portfolio .section-portfolio-layer:hover .section-portfolio-layer-icons {
   cursor: pointer;
   opacity: 1;
   z-index: 0;
+}
+
+.section-content {
+  background-color: #fff;
+  height: 500px;
+}
+
+.section-content button {
+  background-color: #89ca89;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 45px;
+  margin: 36px 0 130px 210px;
+  padding: .5% 0;
+  text-align: center;
+  width: 150px;
+}
+
+.section-content button:hover {
+  background-color: #000;
+  transition: .3s;
+}
+
+.section-content button:active {
+  border-radius: 10px;
+  color: #18dcff;
+}
+
+.section-content .container {
+  position: relative;
+}
+
+.section-content h1 {
+  color: #202227;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 130px 0 40px 210px;
+}
+
+.section-content h2 {
+  color: #767370;
+  font-size: 24px;
+  margin-left: 210px;
+  max-width: 480px;
+}
+
+.section-content h2 span {
+  font-weight: bold;
+}
+
+.section-content img {
+  bottom: 160px;
+  position: absolute;
+  right: 210px;
 }
 /*# sourceMappingURL=style.css.map */
