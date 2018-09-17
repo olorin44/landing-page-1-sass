@@ -2,7 +2,6 @@
 @import "style_global";
 
 // // styles for sections:
-// @import "style_sections";
 @import "style_sections_home";
 @import "style_sections_features";
 @import "style_sections_portfolio";
@@ -12,18 +11,7 @@
 @import "style_sections_clients";
 @import "style_sections_commerce";
 @import "style_sections_callout";
-// @import "style_sections_about";
-// @import "style_sections_services";
-// @import "style_sections_projects";
-// @import "style_sections_team";
-// @import "style_sections_clients";
-// @import "style_sections_logos";
-// @import "style_sections_price";
-// @import "style_sections_premium";
-// @import "style_sections_facts";
-// @import "style_sections_share";
-// @import "style_sections_contacts";
-// @import "style_sections_footer";
+@import "style_sections_footer";
 
 // // media-query styles:
 // @import "style_media_1200";
