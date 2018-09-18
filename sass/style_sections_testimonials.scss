@@ -45,12 +45,17 @@
 	color: #bbb;
 	font-size: 24px;
 	height: 155px;
-	left: 50px;
-	margin-left: 400px;
 	padding: 40px;
 	position: relative;
-	width: 980px;
+	max-width: 980px;
+	margin: auto;
 }
+
+.section-testimonials-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .section-testimonials-arrow {
 	position: absolute;
 	left: 490px;

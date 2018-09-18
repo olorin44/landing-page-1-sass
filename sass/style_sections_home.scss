@@ -53,11 +53,10 @@
 		font-size: 34px;
 		font-weight: 700;
 		height: 75px;
-		margin-bottom: 20px;
-		margin-left: 210px;
-		margin-top: 180px;
-		padding-top: 1%;
-		width: 345px;
+		margin: 180px 0 20px 210px;
+		padding-top: 12px;
+		max-width: 345px;
+		width: 100%;
 	}
 
 	h3 {
@@ -67,8 +66,9 @@
 		font-size: 16px;
 		height: 40px;
 		margin-left: 210px;
-		padding: .7% .3%;
-		width: 450px;
+		padding-top: 8px;
+		max-width: 450px;
+		width: 100%;
 	}
 
 	#hand-phone {

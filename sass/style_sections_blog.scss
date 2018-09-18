@@ -3,15 +3,17 @@
 	background-position: center;
 	background-size: cover;
 	color: #fff;
-	height: 600px;
+	text-align: center;
 
 	div {
 		display: inline-block;
+		text-align: left;
 	}
 
 	h2 {
 		font-size: 30px;
-		margin: 108px 0 0 32%;
+		margin-top: 108px;
+		text-align: center;
 	}
 
 	h4 {
@@ -21,8 +23,7 @@
 	}
 
 	img {
-		height: 160px;
-		width: 90%;
+		margin: 0 5px 0;
 
 		&:hover, &:hover + h4 {
 			cursor: pointer;
@@ -33,13 +34,16 @@
 	p {
 		font-size: 14px;
 		opacity: .75;
-		width: 265px;
+		max-width: 265px;
+		width: 100%;
 	}
 
 	.section-blog-flex-container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
-		margin: 45px 0 107px 32%;
+		margin: 45px auto 30px;
+		max-width: 1000px;
 	}
 
 	.section-blog-line {

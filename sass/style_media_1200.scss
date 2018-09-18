@@ -1,4 +1,5 @@
 // for width less than 1200px:
+
 @media (max-width: 1200px) {
 
 	@for $i from 1 through $grid-columns {
@@ -87,96 +88,52 @@
 
 //styles for section home:
 
-
-
-//styles for section projects:
-
-.section-projects-slider .nav-links {
-
-	& li {
-		border: 0;
+.section-home {
+	h1, h3 {
+		position: relative;
+		z-index: 10;
 	}
 }
 
-//styles for section team:
-.section-team {
-	h2 {
-		font-size: 24px;
+//styles for section features:
+
+.section-features {
+	h1 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 14px;
 	}
 }
 
-.section-team-card {
-	border-radius: 5px;
-	margin: 10px 0 10px 0;
-	height: 100%;
-	width: 100%;
+//styles for section content:
 
-	& i {
-		margin: 10px 10px 20px 10px;
-		padding: .5%;
-	}
+.section-content h1, h2, button {
+	position: relative;
+	z-index: 1;
 }
 
-// styles for section price:
-
-.section-price-card:first-of-type, {
-	margin-left: 5%;
+.section-content h2 {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
 }
 
-// styles for section price:
+//styles for section testimonials:
 
-.section-price-card {
-	border-radius: 15px;
-	margin-bottom: 20px;
-	margin-left: 5%;
+.section-testimonials-content {
+	font-size: 20px;
+	height: 130px;
+	padding: 30px;
+	width: 70%;
 }
 
-.section-price-table {
-	margin: 0;
+.section-testimonials-arrow {
+	display: none;
 }
 
-//styles for section premium:
-
-.section-premium {
-	h2 {
-		font-size: 26px;
-	}
-
-	img {
-		width: 100%;
-	}
-}
-
-//styles for section contacts:
-
-#form-name, #form-email {
-	margin: 30px 15px 30px 15px;
-	width: 23%;
-}
-
-//styles for section contacts-map:
-
-.section-contacts-map {
-	font-size: 16px;
-
-	& .fas:not(.fa-chevron-up), .far {
-		padding-top: 12%;
-	}
-}
-
-//styles for section footer:
-
-.section-footer {
-	height: 550px;
-
-	& i {
-		padding: 1%;
-	}
-	
-	& form {
-		margin-left: 5%;
-		width: 300px;
-	}
+.section-testimonials-arrow-border {
+	display: none;
 }
 
 }

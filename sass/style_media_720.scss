@@ -1,6 +1,6 @@
-// for width less than 600px:
+// for width less than 720px:
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 
 	@for $i from 1 through $grid-columns {
   .col-s-#{$i} {
@@ -95,49 +95,41 @@
 //styles for section home:
 
 .section-home {
+	height: 500px;
 	position: relative;
+	text-align: center;
+
 	#hand-phone {
 		display: none;
 	}
 
-	height: 500px;
-	text-align: center;
-
 	h1, h3 {
-		position: absolute;
-		right: 0;
-		width: 100%;
+		height: 50px;
+		margin: 20px auto;
 	}
 
 	h3 {
 		font-size: 14px;
-		padding: .5%;
-		top: 150px;
 	}
 
 	h1 {
 		font-size: 22px;
-		padding-top: 6%;
-		top: -150px;
-
 	}
-
 }
 
 //styles for section features:
 
 .section-features {
-	height: 700px;
+	padding: 280px 0 300px;
 
 	.container {
 		flex-direction: column;
-		padding-top: 200px;
+		align-items: center;
 		width: 100%;
 	}
 
 	div {
-		margin-top: 40px;
-		width: 100%;
+		margin-top: 30px;
 	}
 
 	h1 {
@@ -152,24 +144,10 @@
 // styles for section portfolio:
 
 .section-portfolio {
-	height: 1600px;
 	position: relative;
-
-	button, h2 {
-		display: block;
-	}
-
-	button {
-		left: 33%;
-		top: 20px;
-		margin-bottom: 20px;
-		position: absolute;
-	}
 
 	h2 {
 		font-size: 20px;
-		margin-left: 0;
-		text-align: center;
 	}
 
 	.icon-gallery-file, .icon-gallery-search {
@@ -186,6 +164,10 @@
 		margin-top: 30px;
 	}
 
+	.section-portfolio-flex-container {
+		justify-content: center;
+	}
+
 	.section-portfolio-layer-icons {
 		height: 150px;
 		width: 180px;
@@ -193,6 +175,7 @@
 }
 
 //styles for section content:
+
 .section-content {
 	height: 200px;
 	text-align: center;
@@ -208,7 +191,7 @@
 
 	h2 {
 		font-size: 14px;
-		margin: 0 0 20px;
+		margin: 0 auto 20px;
 	}
 
 	img {
@@ -216,20 +199,10 @@
 	}
 }
 
-// styles for section blog:
+//styles for section blog:
 
-.section-blog {
-	height: 1200px;
-	padding-top: 1px;
-
-	div {
-		display: block;
-	}
-
-	.section-blog-flex-container {
-		flex-direction: column;
-		margin: 10px 5px;
-	}
+.section-blog-flex-container div {
+	padding-left: 40px;
 }
 
 //styles for section testimonials:
@@ -244,7 +217,6 @@
 	h3 {
 		font-size: 14px;
 		height: 155px;
-		// width: 980px;
 		width: 100%;
 	}
 
@@ -255,19 +227,19 @@
 	h5 {
 		margin-bottom: 20px;
 	}
-
 }
 
 .section-testimonials-content {
-	font-size: 14px;
+	font-size: 16px;
 	height: 120px;
-	margin: 0;
-	padding: 10px;
+	padding: 30px;
 	width: 70%;
 }
+
 .section-testimonials-arrow {
 	display: none;
 }
+
 .section-testimonials-arrow-border {
 	display: none;
 }
@@ -277,7 +249,6 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
 
 // styles for section clients:
 
