@@ -1,0 +1,335 @@
+// for width less than 600px:
+
+@media (max-width: 600px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-s-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+//styles for header:
+
+.company {
+	position: relative;
+
+	img {
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+		transform: scale(.5);
+	}
+}
+
+#menu-toggle {
+  display: block;
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  user-select: none;
+  z-index: 1;
+}
+
+#menu-toggle input {
+	cursor: pointer;
+  	display: block;
+  	height: 32px;
+  	opacity: 0;
+  	position: absolute;
+  	width: 40px;
+  	z-index: 2;
+}
+
+#menu-toggle span {
+	background: grey;
+  	border-radius: 3px;
+  	display: block;
+  	height: 5px;
+  	margin-bottom: 5px;
+  	position: relative;
+  	width: 30px;
+  	z-index: 1;
+}
+
+#menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+#menu {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 2%;
+	margin: -100px 0 0 -50px;
+	font-size: 1em;
+	line-height: 1.8em;
+	padding: 120px 50px 50px;
+	position: absolute;
+	text-align: left;
+	transform: translate(-100%, 0);
+	transition: transform 0.2s;
+	width: 150px;
+}
+
+.nav-links {
+
+	a {
+		color: grey;
+		font-size: 0.9em;
+		line-height: 1em;
+		margin: 5%;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	li {
+		display: block;
+	}
+}
+
+.page-header {
+	margin-bottom: 100px;
+	padding-top: 15px;
+}
+
+//styles for section home:
+
+.section-home {
+	position: relative;
+	#hand-phone {
+		display: none;
+	}
+
+	height: 500px;
+	text-align: center;
+
+	h1, h3 {
+		position: absolute;
+		right: 0;
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 14px;
+		padding: .5%;
+		top: 150px;
+	}
+
+	h1 {
+		font-size: 22px;
+		padding-top: 6%;
+		top: -150px;
+
+	}
+
+}
+
+//styles for section features:
+
+.section-features {
+	height: 700px;
+
+	.container {
+		flex-direction: column;
+		padding-top: 200px;
+		width: 100%;
+	}
+
+	div {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+// styles for section portfolio:
+
+.section-portfolio {
+	height: 1600px;
+	position: relative;
+
+	button, h2 {
+		display: block;
+	}
+
+	button {
+		left: 33%;
+		top: 20px;
+		margin-bottom: 20px;
+		position: absolute;
+	}
+
+	h2 {
+		font-size: 20px;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.icon-gallery-file, .icon-gallery-search {
+		top: 100px;
+	}
+
+	.image {
+		height: 150px;
+	  	width: 180px;
+	}
+
+	.row {
+		margin-left: 19%;
+		margin-top: 30px;
+	}
+
+	.section-portfolio-layer-icons {
+		height: 150px;
+		width: 180px;
+	}
+}
+
+//styles for section content:
+.section-content {
+	height: 200px;
+	text-align: center;
+
+	button {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 20px;
+		margin: 40px 0 0;
+	}
+
+	h2 {
+		font-size: 14px;
+		margin: 0 0 20px;
+	}
+
+	img {
+		display: none;
+	}
+}
+
+// styles for section blog:
+
+.section-blog {
+	height: 1200px;
+	padding-top: 1px;
+
+	div {
+		display: block;
+	}
+
+	.section-blog-flex-container {
+		flex-direction: column;
+		margin: 10px 5px;
+	}
+}
+
+//styles for section testimonials:
+
+.section-testimonials {
+	padding: 70px 0;
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 14px;
+		height: 155px;
+		// width: 980px;
+		width: 100%;
+	}
+
+	h4 {
+		padding-top: 1%;
+	}
+
+	h5 {
+		margin-bottom: 20px;
+	}
+
+}
+
+.section-testimonials-content {
+	font-size: 14px;
+	height: 120px;
+	margin: 0;
+	padding: 10px;
+	width: 70%;
+}
+.section-testimonials-arrow {
+	display: none;
+}
+.section-testimonials-arrow-border {
+	display: none;
+}
+
+.section-testimonials-photos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+// styles for section clients:
+
+.section-clients {
+	.container {
+		max-width: 600px;
+		width: 100%;
+	}
+
+	padding: 30px 5px 10px;
+}
+
+.section-clients span::after {
+	width: 50%;
+}
+
+//styles for section callout:
+
+.section-callout {
+	background-color: #79c277;
+	color: #fff;
+	font-size: 22px;
+	height: 120px;
+	padding-top: 3%;
+}
+
+//styles for section footer:
+
+.section-footer {
+	height: 1600px;
+	padding: 40px 0 20px;
+
+	.container {
+		max-width: 600px;
+	}
+}
+
+.section-footer-copyright {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.section-footer-line {
+	max-width: 600px;
+}
+
+.section-footer-socialmedia {
+	text-align: center;
+
+	i {
+		margin-bottom: 5px;
+		margin-left: 5px;
+	}
+}
+}

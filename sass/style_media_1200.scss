@@ -2,7 +2,7 @@
 @media (max-width: 1200px) {
 
 	@for $i from 1 through $grid-columns {
-  .col-ms-#{$i} {
+  .col-md-#{$i} {
     width: 100% / 12 * $i;
   }
 }
@@ -87,18 +87,7 @@
 
 //styles for section home:
 
-.fa-phone-volume {
-	bottom: 35px;
-	position: absolute;
-	right: 50px;
-}
 
-.section-home {
-	.pagination {
-		margin-top: 300px;
-		margin-left: 0;
-	}
-}
 
 //styles for section projects:
 

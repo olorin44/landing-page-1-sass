@@ -33,58 +33,6 @@ body {
 	width: 100%;
 }
 
-.long-btn {
-	border-radius: 30px;
-	color: white;
-	font-size: 12px;
-	font-weight: bold;
-	height: 45px;
-	margin: 20px 0;
-	width: 194px;
-
-	&:hover {
-		background-color: white;
-		cursor: pointer;
-		transition: .2s;
-	}
-
-	&:active {
-		color: white;
-		transition: .2s;
-	}
-	
-	& a {
-		color: white;
-		text-decoration: none;
-	}
-}
-
-.short-btn {
-	background-color: black;
-	border-radius: 30px;
-	color: white;
-	font-size: 12px;
-	font-weight: bold;
-	height: 45px;
-	width: 129px;
-	
-	&:hover {
-		background-color: white;
-		cursor: pointer;
-		transition: .2s;
-	}
-
-	&:active {
-		color: white;
-		transition: .2s;
-	}
-	
-	& a {
-		color: white;
-		text-decoration: none;
-	}
-}
-
 .row {
 	overflow: auto;
 	
