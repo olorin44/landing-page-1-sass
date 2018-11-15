@@ -27,7 +27,7 @@
   position: fixed;
   top: 10px;
   user-select: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 #menu-toggle input {
@@ -37,7 +37,7 @@
   	opacity: 0;
   	position: absolute;
   	width: 40px;
-  	z-index: 2;
+  	z-index: 3;
 }
 
 #menu-toggle span {
@@ -48,7 +48,7 @@
   	margin-bottom: 5px;
   	position: relative;
   	width: 30px;
-  	z-index: 1;
+  	z-index: 2;
 }
 
 #menu-toggle input:checked ~ ul {
